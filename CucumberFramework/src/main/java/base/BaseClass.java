@@ -78,13 +78,13 @@ public class BaseClass extends AbstractTestNGCucumberTests {
 
 		}
 
-		ChromeOptions options = new ChromeOptions();
+		//ChromeOptions options = new ChromeOptions();
 		DesiredCapabilities dc = new DesiredCapabilities();
 		options.setCapability("browserName", "chrome");
 		options.setCapability("platformName", Platform.LINUX);
 
 		//driver = new RemoteWebDriver(new URL("https://mohanapriya1811:f9bed5fc-1206-445b-8c62-234198b24678@ondemand.us-west-1.saucelabs.com:443/wd/hub"), options);
-		driver = new RemoteWebDriver(new URL("http://172.17.0.1:4444/wd/hub"), options);
+		//driver = new RemoteWebDriver(new URL("http://172.17.0.1:4444/wd/hub"), options);
 		
 		 driver = new ChromeDriver();
 		driver.manage().window().maximize();
